@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ploofypaws_doctor/pages/patient_list.dart';
 
 class PatientCard extends StatelessWidget {
   final int totalPatients;
@@ -18,6 +19,7 @@ class PatientCard extends StatelessWidget {
 
     return Container(
       padding: EdgeInsets.all(size.width * 0.05),
+      margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       decoration: BoxDecoration(
         color: Colors.grey[900],
         borderRadius: BorderRadius.circular(size.width * 0.05),
@@ -37,7 +39,11 @@ class PatientCard extends StatelessWidget {
                 ),
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const PatientListPage(),
+                  ));
+                },
                 child: Row(
                   children: [
                     Text(
@@ -48,7 +54,7 @@ class PatientCard extends StatelessWidget {
                       ),
                     ),
                     Icon(
-                      Icons.arrow_forward,
+                      Icons.arrow_forward_ios,
                       color: Colors.white,
                       size: size.width * 0.04,
                     ),
@@ -68,7 +74,8 @@ class PatientCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 _buildStatRow('Total Patients', totalPatients, size),
-                _buildStatRow('Added Patients (today)', addedPatientsToday, size),
+                _buildStatRow(
+                    'Added Patients (today)', addedPatientsToday, size),
                 _buildStatRow('Total Sessions', totalSessions, size),
               ],
             ),
@@ -76,8 +83,8 @@ class PatientCard extends StatelessWidget {
           SizedBox(height: size.height * 0.02),
           ElevatedButton.icon(
             onPressed: () {},
-            icon: Icon(Icons.add),
-            label: Text('Add Patient'),
+            icon: const Icon(Icons.add_circle_outline),
+            label: const Text('Add Patient'),
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.white,
               foregroundColor: Colors.black,
@@ -86,7 +93,7 @@ class PatientCard extends StatelessWidget {
                 horizontal: size.width * 0.1,
               ),
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(size.width * 0.05),
+                borderRadius: BorderRadius.circular(50),
               ),
             ),
           ),

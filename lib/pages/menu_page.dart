@@ -10,7 +10,7 @@ class MenuPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text('Menu'),
+        title: const Text('Menu'),
       ),
       body: Padding(
         padding: EdgeInsets.all(size.width * 0.05),
@@ -69,7 +69,7 @@ class MenuPage extends StatelessWidget {
               label: 'Delete Account',
               isDestructive: true,
             ),
-            Spacer(),
+            const Spacer(),
             Text(
               'Version 1.0.0',
               style: TextStyle(
@@ -80,34 +80,7 @@ class MenuPage extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.black,
-        selectedItemColor: Colors.white,
-        unselectedItemColor: Colors.grey,
-        currentIndex: 4, // Menu is the fifth item
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.event),
-            label: 'Appointments',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.notifications),
-            label: 'Notifications',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profile',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.menu),
-            label: 'Menu',
-          ),
-        ],
-      ),
+    
       backgroundColor: Colors.black,
     );
   }
@@ -132,7 +105,7 @@ class MenuPage extends StatelessWidget {
               color: isDestructive ? Colors.red : Colors.white,
             ),
           ),
-          Spacer(),
+          const Spacer(),
           if (isLocked)
             Icon(
               Icons.lock,

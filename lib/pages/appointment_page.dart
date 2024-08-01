@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:intl/intl.dart';
+import 'package:ploofypaws_doctor/widgets/patient_card.dart';
 
 class AppointmentPage extends StatefulWidget {
   const AppointmentPage({super.key});
@@ -91,43 +92,17 @@ class _AppointmentPageState extends State<AppointmentPage> {
               style: TextStyle(fontSize: 18, color: Colors.white),
             ),
           ),
-          const Expanded(
-            child: Center(
-              child: Text(
-                'No Appointments',
-                style: TextStyle(fontSize: 18, color: Colors.white),
-              ),
-            ),
-          ),
+          // const Expanded(
+          //   child: Center(
+          //     child: Text(
+          //       'No Appointments',
+          //       style: TextStyle(fontSize: 18, color: Colors.white),
+          //     ),
+          //   ),
+          // ),
+          const PatientCard(
+              totalPatients: 3, addedPatientsToday: 7, totalSessions: 16),
         ],
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Iconsax.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.calendar_today),
-            label: 'Appointments',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.notifications),
-            label: 'Notifications',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Settings',
-            backgroundColor: Colors.black,
-          ),
-        ],
-        currentIndex: 1, // Set the current index to "Appointments" tab
-        selectedItemColor: Colors.black,
-        unselectedItemColor: Colors.black,
-        backgroundColor: Colors.black,
-        onTap: (index) {
-          // Handle navigation here
-        },
       ),
       backgroundColor: Colors.black,
     );

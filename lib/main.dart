@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:ploofypaws_doctor/firebase_options.dart';
 import 'package:ploofypaws_doctor/pages/appointment_page.dart';
 import 'package:ploofypaws_doctor/pages/availability_page.dart';
+import 'package:ploofypaws_doctor/pages/login_page.dart';
+import 'package:ploofypaws_doctor/pages/patient_list.dart';
+import 'package:ploofypaws_doctor/pages/root.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,11 +22,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Ploofypaws Admin',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      theme: ThemeData.dark(
         useMaterial3: true,
       ),
-      home: const AppointmentPage(),
+      home: const Root(),
     );
   }
 }

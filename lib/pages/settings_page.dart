@@ -110,11 +110,11 @@ class ProfileSettingsPage extends StatelessWidget {
               height: size.height * 0.08,
               child: ElevatedButton(
                 onPressed: () {},
-                child:
-                    Text('Save', style: TextStyle(fontSize: size.width * 0.05)),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.purple,
                 ),
+                child:
+                    Text('Save', style: TextStyle(fontSize: size.width * 0.05)),
               ),
             ),
           ],
