@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "270797583600",
+    "project_id": "ploofypaws-67fcb",
+    "storage_bucket": "ploofypaws-67fcb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270797583600:android:cbb52e24ede0bc7e5a7e35",
+        "android_client_info": {
+          "package_name": "com.ploofypaws"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270797583600-3diqij9vjiacrthbnv6lu9n0usrp7257.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ploofypaws",
+            "certificate_hash": "a3196b82f38f4945fd04c7e2f99b7c8223f7c7f4"
+          }
+        },
+        {
+          "client_id": "270797583600-727kij200igm6cgeasvep281kui049gn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ploofypaws",
+            "certificate_hash": "e58ba5fbffa158b30a0672ffd7ea76615f4c8a52"
+          }
+        },
+        {
+          "client_id": "270797583600-mm391ffp35ktdtnt1gecj28e0f32rqjm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ploofypaws",
+            "certificate_hash": "0298f7d9bc0e72f157c945233483d8946cef4e1a"
+          }
+        },
+        {
+          "client_id": "270797583600-ctjf8lq228r645njs2b884087l7oblef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATOJPCcsOClghO_ieTg86Kc6ouGO-Qwj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270797583600-ctjf8lq228r645njs2b884087l7oblef.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "270797583600-9hpb0lprho1k5cltbn3lgj2k758nrbnk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "life.ploofypaws.care"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270797583600:android:a324db0be08ae1f55a7e35",
+        "android_client_info": {
+          "package_name": "com.ploofypaws.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270797583600-ctjf8lq228r645njs2b884087l7oblef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATOJPCcsOClghO_ieTg86Kc6ouGO-Qwj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270797583600-ctjf8lq228r645njs2b884087l7oblef.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "270797583600-9hpb0lprho1k5cltbn3lgj2k758nrbnk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "life.ploofypaws.care"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
